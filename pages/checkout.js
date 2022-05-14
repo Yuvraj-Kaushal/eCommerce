@@ -325,7 +325,7 @@ pauseOnHover
         <span className="font-bold">Subtotal: ₹{subTotal}</span>
       </div>
       <div className="">
-        <Link href={"/checkout"}>
+        <Link href={"/checkout"} passHref>
           <button
             disabled={disabled}
             onClick={initiatePayment}

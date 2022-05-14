@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
+import Image from 'next/image'
 
 const Signup = () => {
   const router = useRouter()
@@ -68,7 +69,7 @@ const Signup = () => {
       <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <img
+            <Image
               className="mx-auto h-20 w-auto"
               src="jaipa circle.png"
               alt="Workflow"

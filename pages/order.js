@@ -2,7 +2,8 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import Order from '../models/Order'
 import mongoose from 'mongoose'
-import { useEffect } from 'react'
+import Image from 'next/image'
+
 
 const MyOrder = ({order, clearCart}) => {
   const products = order.products;
@@ -46,7 +47,7 @@ const MyOrder = ({order, clearCart}) => {
           <button className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded">Track your order</button>
         </div>
       </div>
-      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="/order.jpg"/>
+      <Image alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="/order.jpg"/>
     </div>
   </div>
 </section>

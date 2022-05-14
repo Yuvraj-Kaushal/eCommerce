@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Product from "../models/Product"
 import mongoose from 'mongoose'
 
@@ -14,7 +15,7 @@ const Tshirts = ({products}) => {
 
      return <Link passHref={true} key={products[item]._id} href={`/product/${products[item].slug}`}><div className="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-6">
         <a className="block relative rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto md:m-auto h-[30vh]  md:h-[36vh] block" src={products[item].img}/>
+          <Image alt="ecommerce" className="m-auto md:m-auto h-[30vh]  md:h-[36vh] block" src={products[item].img}/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>

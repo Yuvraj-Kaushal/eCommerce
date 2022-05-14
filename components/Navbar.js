@@ -27,7 +27,7 @@ const Navbar = ({logout, user, cart, addToCart, removeFromCart, clearCart, subTo
   return (
     <div className="flex flex-col md:flex-row md:justify-start justify-center items-center shadow-md sticky top-0 bg-white z-10">
       <div className="logo mr-auto md:mx-5">
-        <Link href={"/"}>
+        <Link href={"/"} passHref>
           <a>
             <Image src="/jaipa logo.png" alt="" width={175} height={70} />
           </a>
@@ -35,22 +35,22 @@ const Navbar = ({logout, user, cart, addToCart, removeFromCart, clearCart, subTo
       </div>
       <div className="nav">
         <ul className="flex items-center space-x-4 font-bold md:text-md p-5">
-          <Link href={"/tshirts"}>
+          <Link href={"/tshirts"} passHref>
             <a>
               <li className="hover:text-purple-500">T-Shirts</li>
             </a>
           </Link>
-          <Link href={"/hoodies"}>
+          <Link href={"/hoodies"} passHref>
             <a>
               <li className="hover:text-purple-500">Hoodies</li>
             </a>
           </Link>
-          <Link href={"/stickers"}>
+          <Link href={"/stickers"} passHref>
             <a>
               <li className="hover:text-purple-500">Stickers</li>
             </a>
           </Link>
-          <Link href={"/mugs"}>
+          <Link href={"/mugs"} passHref>
             <a>
               <li className="hover:text-purple-500">Mugs</li>
             </a>
