@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
-import {useRouter} from 'next/router'
+import {useRouter, useEffect} from 'next/router'
 import LoadingBar from 'react-top-loading-bar'
 
 function MyApp({ Component, pageProps }) {
