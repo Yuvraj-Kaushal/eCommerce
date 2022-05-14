@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import {useEffect} from 'react'
 import Image from 'next/image'
-import { useRouter, useEffect } from "next/router";
+import { useRouter } from "next/router";
 
 const Forgot = () => {
   const router = useRouter()

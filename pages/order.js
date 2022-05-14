@@ -1,8 +1,10 @@
 import React from 'react'
-import { useRouter, useEffect } from 'next/router'
+import { useRouter} from 'next/router'
 import Order from '../models/Order'
 import mongoose from 'mongoose'
 import Image from 'next/image'
+import {useEffect } from "react";
+
 
 
 const MyOrder = ({order, clearCart}) => {

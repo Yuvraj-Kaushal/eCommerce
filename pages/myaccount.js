@@ -1,5 +1,7 @@
 import React from 'react'
-import { useRouter, useEffect } from "next/router";
+import { useRouter } from "next/router";
+import {  useEffect } from "react";
+
 
 const MyAccount = () => {
 const router = useRouter()
