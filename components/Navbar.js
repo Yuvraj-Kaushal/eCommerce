@@ -63,8 +63,8 @@ const Navbar = ({logout, user, cart, addToCart, removeFromCart, clearCart, subTo
         <span onMouseOver={()=>{setDropdown(true)}} onMouseLeave={()=>{setDropdown(false)}}>
         {dropdown && <div onMouseOver={()=>{setDropdown(true)}} onMouseLeave={()=>{setDropdown(false)}} className="absolute right-8 bg-white shadow-lg border-2 top-7 py-2 rounded-md px-5 w-32">
         <ul>
-          <Link href={'/myaccount'}><a><li className="py-1 hover:text-purple-700 text-sm font-bold">My Account</li></a></Link>
-          <Link href={'/orders'}><a><li className="py-1 hover:text-purple-700 text-sm font-bold">Orders</li></a></Link>
+          <Link href={'/myaccount'} passHref><a><li className="py-1 hover:text-purple-700 text-sm font-bold">My Account</li></a></Link>
+          <Link href={'/orders'} passHref><a><li className="py-1 hover:text-purple-700 text-sm font-bold">Orders</li></a></Link>
           <li onClick={logout} className="py-1 hover:text-purple-700 text-sm font-bold">Logout</li>
         </ul>
       </div>}
@@ -104,7 +104,7 @@ const Navbar = ({logout, user, cart, addToCart, removeFromCart, clearCart, subTo
         </ol>
         <div className="font-bold my-4">Subtotal: ₹{subTotal}</div>
         <div className="flex">
-        <Link href={'/checkout'}><button disabled={Object.keys(cart).length === 0 } className="disabled:bg-purple-300 flex mx-2  text-white bg-purple-500 border-0 py-2 px-2 focus:outline-none hover:bg-purple-600 rounded text-sm"><IoBagCheck className=" m-1 text-sm"/>Checkout</button></Link>
+        <Link href={'/checkout'} passHref><button disabled={Object.keys(cart).length === 0 } className="disabled:bg-purple-300 flex mx-2  text-white bg-purple-500 border-0 py-2 px-2 focus:outline-none hover:bg-purple-600 rounded text-sm"><IoBagCheck className=" m-1 text-sm"/>Checkout</button></Link>
         <button disabled={Object.keys(cart).length === 0} onClick={clearCart} className="disabled:bg-purple-300 flex mx-2 text-white bg-purple-500 border-0 py-2 px-2 focus:outline-none hover:bg-purple-600 rounded text-sm">Clear Cart</button>
         </div>
       </div>
