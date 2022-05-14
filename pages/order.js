@@ -25,11 +25,11 @@ const MyOrder = ({order, clearCart}) => {
         <p className="leading-relaxed mb-4">Yay! Your order has been successfully placed!</p>
         <p>Your payment status is: <span className='font-semibold text-purple-600'>{order.status}</span> </p>
 
-        <div class="mt-4 flex mb-4">
+        <div className="mt-4 flex mb-4">
 
-          <a class="flex-grow text-center py-2 text-lg px-1">Item Description</a>
-          <a class="flex-grow text-center  py-2 text-lg px-1">Quantity</a>
-          <a class="flex-grow text-center py-2 text-lg px-1">Item Total</a>
+          <a className="flex-grow text-center py-2 text-lg px-1">Item Description</a>
+          <a className="flex-grow text-center  py-2 text-lg px-1">Quantity</a>
+          <a className="flex-grow text-center py-2 text-lg px-1">Item Total</a>
         </div>
 
 
